@@ -1,8 +1,4 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
+Design by Kalibata Five Grocery Store [Team KF](http://kalibata.city/)
 &mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
-&mdash;
-this site is [open source]({{ site.source_link }})
-
