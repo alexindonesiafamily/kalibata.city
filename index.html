@@ -1,90 +1,22 @@
----
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ Kalibata Five Grocery Store - Toko Kelontong 24 Jam di Kalibata City  }}</title>
-	<meta name="keywords" content="{{ toko kelontong Kalibata City, grocery store 24 jam, minimarket buka malam kalibata, kebutuhan harian kalibata city.warung terdekat buka 24 jam, belanja cepat kalibata city, toko 24 jam  Jakarta Selatan, belanja kalibata city  }}">
-	<meta name="description" content="{{ Kalibata Five Grocery Store, Melayani Kebutuhan Harian Anda 24 Jam Jakarta SelatanNon Stop. Lokasi Strategis di Kalibata City. Siap Sedia Air Mineral, Makanan, Roti dan Stock Rumah Tangga Kapan Saja. Buka Pagi, Siang, Malam - Tanpa Libur! }}">
-  <link rel="stylesheet" href="combo.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
-	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalibata City — Property & Café</title>
+<meta name="description" content="Jelajahi hunian, properti, café, dan kuliner di Kalibata City. Ruang untuk tinggal, bertemu, dan menikmati hari.">
+<meta name="theme-color" content="#173f35"><link rel="canonical" href="https://kalibata.city/">
+<meta property="og:title" content="Kalibata City — Property & Café"><meta property="og:description" content="Temukan ruang untuk tinggal. Temukan tempat untuk singgah."><meta property="og:type" content="website"><meta property="og:url" content="https://kalibata.city/">
+<link rel="stylesheet" href="property-cafe.css">
 </head>
 <body>
-	<header id="home">
-  <div class="container">
-    <img id="img/kalibata-five-logo.png" scr="img/kalibata-five-logo.png" alt="Kalibata Five Grocery Store" style="max-width: 200px; height:auto; display:block; margin:auto" >
-    <h1>Kalibata Five Grocery</h1>
-    <h2>Toko 24 Jam di Kalibata City – Fresh, Cepat, Murah!</h2>
-    <p>
-      Belanja kebutuhan sehari-hari tanpa batas waktu. Kami buka 24 jam setiap hari dengan stok barang dari principal dengan harga bersahabat.
-    </p>
-  </div>
-</header>
-
-<section id="about">
-  <div class="container">
-    <h2>Tentang Kami</h2>
-    <p>
-      Kalibata Five Grocery Store adalah toko kelontong 24 jam yang melayani warga Kalibata City dan sekitarnya. 
-      Kami menyediakan berbagai kebutuhan rumah tangga, makanan, minuman, hingga barang kebutuhan "darurat" isi peurt tengahh malam dengan layanan cepat dan ramah.
-    </p>
-    <ul>
-      <li><strong>Alamat:</strong> Tower Lotus AL 12, Depan Lapangan Tenis  - Kalibata City</li>
-      <li><strong>Jam Buka:</strong> 24 Jam Nonstop</li>
-      <li><strong>Telepon/WA:</strong> 0877-3759-6811</li>
-    </ul>
-  </div>
-</section>
-
-
-  <div id="main">
-
-    <nav><ul>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
-
-
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-        {% elsif page.fa-icon %}
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-          </span>
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
-        </div>
-      </div>
-    {% endfor %}
-
-
-    <div id="footer" class="section text-white">
-      <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
-      </div>
-    </div>
-  </div>
-
-{% include analytics.html %}
-</body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="site.js"></script>
-</html>
+<a class="skip" href="#utama">Langsung ke konten</a>
+<header class="header"><a class="brand" href="#beranda" aria-label="Kalibata City beranda"><span class="brand-icon" aria-hidden="true">k.</span><span>kalibata<span class="brand-city">.city</span><small>PROPERTY & CAFÉ</small></span></a><nav aria-label="Navigasi utama"><a href="#properti">Properti</a><a href="#cafe">Café & Kuliner</a><a href="#kawasan">Kawasan</a></nav><a class="nav-cta" href="#bergabung">Pasang listing <span aria-hidden="true">↗</span></a></header>
+<main id="utama">
+<section class="hero" id="beranda"><div class="hero-copy"><p class="eyebrow"><span></span> KALIBATA CITY · JAKARTA SELATAN</p><h1>Tempat tinggal.<br>Tempat singgah.<br><em>Cerita baru.</em></h1><p class="intro">Dari hunian pilihan hingga sudut favorit untuk menikmati kopi. Jelajahi kehidupan di sekitar Kalibata City.</p><div class="actions"><a class="button" href="#properti">Jelajahi properti <span aria-hidden="true">↗</span></a><a class="text-link" href="#cafe">Temukan café <span aria-hidden="true">→</span></a></div><p class="hero-note">Hunian &nbsp; / &nbsp; Kopi & kuliner &nbsp; / &nbsp; Kehidupan kota</p></div><div class="hero-art hero-photo"><img src="img/green-palace-cover.webp" alt="Apartemen Green Palace Kalibata City dengan kolam renang dan taman" width="1080" height="720" fetchpriority="high" decoding="async"></div></section>
+<div class="strip"><span>Ruang untuk hidup lebih dekat.</span><p>PROPERTI <i>✳</i> CAFÉ <i>✳</i> KOMUNITAS <i>✳</i> KALIBATA CITY</p></div>
+<section class="section" id="properti"><div class="section-top"><div><p class="eyebrow">01 / TEMUKAN HUNIANMU</p><h2>Ruang yang terasa<br>seperti <em>rumah.</em></h2></div><p>Apartemen untuk disewa atau dimiliki.<br>Pilih berdasarkan kebutuhan, lalu kenali setiap detailnya.</p></div><figure class="property-photo"><img src="img/kalibata-city-residence.jpg" alt="Gedung apartemen dan lingkungan Kalibata City Residence" width="1500" height="1000" loading="lazy" decoding="async"><figcaption>Kalibata City Residence</figcaption></figure><div class="category-grid"><article class="category"><span class="category-number">01</span><h3>Sewa apartemen</h3><p>Jelajahi pilihan hunian untuk kebutuhan tinggal Anda.</p><span class="status">Listing segera hadir</span></article><article class="category"><span class="category-number">02</span><h3>Jual apartemen</h3><p>Kenali pilihan unit sebelum merencanakan kunjungan.</p><span class="status">Listing segera hadir</span></article><article class="category feature"><span class="category-number">PUNYA UNIT?</span><h3>Temukan penghuni<br>berikutnya.</h3><p>Siapkan foto, informasi unit, dan kontak yang bisa dihubungi.</p><a class="text-link" href="#bergabung">Lihat kebutuhan listing <span aria-hidden="true">↗</span></a></article></div><p class="data-note">Katalog sedang disiapkan. Informasi harga, ketersediaan, dan foto akan ditampilkan setelah data listing tersedia.</p></section>
+<section class="cafe-section" id="cafe"><div class="cafe-visual cafe-photo"><img src="img/cafe-kalibata-city.jpg" alt="Suasana café dengan area duduk terbuka di Kalibata City" width="335" height="597" loading="lazy" decoding="async"></div><div class="cafe-copy"><p class="eyebrow">02 / SINGGAH SEJENAK</p><h2>Satu kawasan.<br>Banyak alasan<br>untuk <em>singgah.</em></h2><p>Secangkir kopi, obrolan santai, atau makan bersama. Kenali café dan tempat kuliner di sekitar hunian Anda.</p><div class="tags"><span>Kopi & café</span><span>Kuliner</span><span>Tempat berkumpul</span></div><div class="cafe-notice"><strong>Direktori café segera hadir</strong><p>Profil tempat, menu unggulan, jam buka, dan lokasi akan tersedia setelah informasi terverifikasi.</p></div><a class="text-link" href="#bergabung">Kenalkan usaha Anda <span aria-hidden="true">↗</span></a></div></section>
+<section class="section neighborhood" id="kawasan"><p class="eyebrow">03 / KEHIDUPAN DI SEKITARMU</p><h2>Bukan sekadar alamat.<br><em>Bagian dari keseharian.</em></h2><div class="neighborhood-grid"><div><span>TINGGAL</span><h3>Ruang pribadi Anda.</h3><p>Mulai dari hunian yang sesuai dengan kebutuhan dan rutinitas.</p></div><div><span>BERTEMU</span><h3>Obrolan tanpa terburu.</h3><p>Jadikan café dan kuliner bagian dari cerita bersama orang terdekat.</p></div><div><span>MENJELAJAH</span><h3>Kenali lingkungan.</h3><p>Temukan tempat dan usaha lokal di sekitar Kalibata City.</p></div></div></section>
+<section class="join section" id="bergabung"><div><p class="eyebrow">TUMBUH BERSAMA KAWASAN</p><h2>Punya properti<br>atau usaha <em>café?</em></h2><p>Siapkan informasi berikut untuk ditampilkan di direktori Kalibata City.</p></div><div class="join-details"><h3>Yang perlu disiapkan</h3><ul><li>Foto asli unit atau tempat usaha</li><li>Nama, lokasi, dan deskripsi singkat</li><li>Harga sewa/jual atau menu unggulan</li><li>Kontak pemilik atau pengelola</li></ul><p class="join-note">Pendaftaran listing belum dibuka. Kontak pengelola akan ditampilkan di halaman ini setelah dikonfirmasi.</p></div></section>
+</main><footer><a class="footer-brand" href="#beranda">kalibata.city</a><span>Property, coffee & everyday living.</span><a href="#beranda">Kembali ke atas ↑</a></footer>
+</body></html>
